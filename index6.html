@@ -30,5 +30,50 @@
   <label for="123">密码：</label>
   <input id="123" type="password">
 </form>
+<h2>日期选择</h2>
+<form>
+  <label><input type="date"></label>
+  <label><input type="time"></label>
+  <label><input type="datetime-local"></label>
+</form>
+<h2>数字和范围</h2>
+<form>
+  <label><input type="number" max="100" min="0" step="2"></label>
+  <label><input type="submit"></label>
+</form>
+<h2>单选</h2>
+<form>
+  <div>请选择您的高考毕业礼物:</div>
+  <label><input name="test" type="radio" value="a">100万元现金</label>
+  <label><input name="test" type="radio" value="b">清华大学录取通知书</label>
+  <label><input type="submit"></label>
+  <!-- 单选中同一组中需要添加相同的名称 -->
+  <!--加上checked默认选择这项-->
+</form>
+<h2>多选</h2>
+<form>
+  <div>请选择你的高考毕业礼物:</div>
+  <label><input name="index" type="checkbox" value="A">100万元现金</label>
+  <label><input name="index" type="checkbox" value="B">清华大学录取通知书</label>
+  <label><input name="index" type="checkbox" value="C">工地搬砖</label>
+  <label><input type="submit"></label>
+</form>
+<h2>下拉菜单</h2>
+<form>
+  <select name="test" multiple size="3">
+    <option value="a">Java入门到入土</option>
+    <option value="b" selected>C++就业到裁员</option>
+    <option value="c">C#的虚空岗位</option>
+    <option value="d">Web前端被AI取代</option>
+  </select>
+  <input type="submit">
+  <!--添加multiple可以多选-->
+  <!--加上selected默认选择这项-->
+</form>
+<h2>文本域</h2>
+<form>
+  <label><textarea rows="5" cols="10" maxlength="20" placeholder="请输入文本">我是默认值</textarea></label>
+  <label><input type="file"></label>
+</form>
 </body>
 </html>
